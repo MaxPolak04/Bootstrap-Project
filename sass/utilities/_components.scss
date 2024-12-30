@@ -1,1 +1,14 @@
 @use "./colors" as *;
+
+.text-justify {
+    text-align: justify;
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.line {
+    width: 100%;
+}

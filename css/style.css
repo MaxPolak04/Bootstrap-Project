@@ -1,8 +1,49 @@
+.text-justify {
+  text-align: justify;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.line {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  line-height: 51.25px;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
+
+.nav-icon {
+  font-size: 3rem;
+  margin-right: 0.2em;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (width >= 992px) {
+  .nav-link {
+    font-size: 2.2rem;
+    margin: 0 0.5em;
+  }
+}
 .hero-img {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
   background-image: url("../../img/hero-img-small.jpg");
   background-position: center;
   background-size: cover;
@@ -17,11 +58,30 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+.hero-img__text {
+  color: #fde510;
+}
+
 @media (width >= 992px) {
   .hero-img {
     background-image: url("../../img/hero-img-large.jpg");
   }
 }
+.carousel {
+  max-width: 1500px;
+  margin: 4em auto 0;
+}
+.carousel__img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__icon {
+  font-size: 5rem;
+  margin-bottom: 0.2em;
+}
+
 *,
 *::before,
 *::after {
@@ -33,10 +93,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 87.5px;
 }
 
 body {
   position: relative;
-  min-height: 100vh;
   font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@use './colors' as *;
+@use './mixins' as *;
+@use './components' as *;
+
+.navbar-brand {
+    font-size: 2rem;
+    line-height: 51.25px;
+}
+
+.nav-link {
+    font-size: 2rem;
+}
+
+.nav-icon {
+    font-size: 3rem;
+    margin-right: .2em;
+}
+
+.navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@media (width >= 992px) {
+    .nav-link {
+        font-size: 2.2rem;
+        margin: 0 .5em;
+    }
+}
